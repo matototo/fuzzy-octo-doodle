@@ -1,0 +1,76 @@
+.infolettre-pop-up{
+    bottom: 50px;
+    position: fixed;
+    padding: 20px 40px;
+    right:50px;
+    transition: bottom 5s ease;
+    background-color: aqua;
+    z-index: 10;
+    
+    
+        &.infolettre-pop-up--ferme{
+            bottom: -150px;
+        }
+    
+        &.infolettre-pop-up--ouvert{
+            bottom: 50px;
+        }
+
+        .invisible {
+            display: none;
+        }
+    
+        p{
+            line-height: 2px;
+            letter-spacing: 0.01em;
+            font-size: 1em;
+            margin-bottom: 30px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        form {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        section {
+            width: 300px;
+            height: 80px;
+        }
+        
+        .wrapper {
+            display: flex;
+            justify-content: space-evenly;
+            justify-items: center;
+        }
+
+        [data-js-soumettre] {
+            margin-top: 35px;
+        }
+    
+    }
+
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.formulaire-admin {
+    padding: 20px;
+
+}
+
+.formulaire-admin + label {
+    margin-left: 15px;
+}
+
+.formulaire-admin + input {
+    border: none;
+}
+
+.formulaire-admin + button {
+    margin-left: 25px;
+    margin-top: 10px;
+}
