@@ -1,20 +1,8 @@
 <?php
 
 /**
- * Retourne toutes les valeurs dans la table PLUGIN_INSCRIPTION_INFO_PARAMETRES
+ * Fonction modal_infolettre_get() qui va chercher les résultats dans la base de données. C'était long parce qu'au début, cela nous retournait un objet avec des restrictions. Je ne sais pas du tout comment le paramètre ARRAY_A fonctionne, mais ça marche ! On utilise cette fonction pour les paramètres côté admin. Il y a donc toujours juste un id dans cette table.
  */
-/*
-TODO:
-function plugin_inscription_info_get_data()
-{
-    global $wpdb;
-
-    $resultat = $wpdb->get_var("SELECT * FROM " . PLUGIN_INSCRIPTION_INFO_PARAMETRES . "WHERE id=1");
-
-    return $resultat;
-}
-*/
-
 function modal_infolettre_get()
 {
     global $wpdb;
@@ -24,7 +12,11 @@ function modal_infolettre_get()
     return $resultat;
 }
 
-function modal_infolettre_get_nom() {
+
+/**
+ * Fonction modal_infolettre_get_inscriptions() qui va chercher les informations des inscriptions à l'infolettre dans notre base de données. Encore une fois, j'utilise ARRAY_A parce qu'on doit utiliser get_results.
+ */
+function modal_infolettre_get_inscriptions() {
 
     global $wpdb;
 

@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Fonction modal_infolettre_activation tel que vu en cours
+ */
 function modal_infolettre_activation()
 {
     global $wpdb;
@@ -15,9 +18,9 @@ function modal_infolettre_activation()
                 couleur_txt varchar(10) NOT NULL,
                 titre varchar(100) NOT NULL,
                 nom varchar(30) NOT NULL,
-                courriel varchar(10) NOT NULL,
-                btn_prochain varchar(10) NOT NULL,
-                btn_soumission varchar(10) NOT NULL,
+                courriel varchar(30) NOT NULL,
+                btn_prochain varchar(30) NOT NULL,
+                btn_soumission varchar(30) NOT NULL,
                 PRIMARY KEY(id)
             ) $charset_collate";
 
@@ -38,14 +41,3 @@ function modal_infolettre_activation()
         dbDelta($sql);
     }
 }
-/*
- couleur_txt_icones varchar(10) NOT NULL,
-                titre varchar(10) NOT NULL
-                nom_usr varchar(20) NOT NULL,
-                courriel varchar(20) NOT NULL,
-                boutton_suivant varchar(10) NOT NULL,
-                boutton_soumettre varchar(10) NOT NULL,
-
-                , 'titre' => 'Inscrivez-vous à notre infolettre !','nom' => 'Nom', 'courriel' => 'Courriel', 'suivant' => 'Suivant', 'soumettre' => 'Soumettre'
-
-*/

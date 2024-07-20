@@ -5,7 +5,6 @@ if (!defined('WP_UNINSTALL_PLUGIN')) {
     die;
 }
 
-
 $table_parametres = $wpdb->prefix . 'modal_infolettre_parametres';
 $wpdb->query("DROP TABLE IF EXISTS $table_inscriptions");
 

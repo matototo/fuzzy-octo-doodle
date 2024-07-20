@@ -45,7 +45,7 @@
             justify-items: center;
         }
 
-        [data-js-soumettre] {
+        .soumettre {
             margin-top: 35px;
         }
     
@@ -57,20 +57,45 @@ h2 {
     font-weight: bold;
 }
 
+h3 {
+    font-size: 26px;
+    font-weight: bold;
+}
+.border {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid black;
+    width: 300px;
+}
 .formulaire-admin {
     padding: 20px;
 
 }
 
-.formulaire-admin + label {
-    margin-left: 15px;
-}
-
-.formulaire-admin + input {
-    border: none;
-}
-
-.formulaire-admin + button {
-    margin-left: 25px;
+.btn {
     margin-top: 10px;
+}
+
+.liste-admin {
+    padding: 20px;
+}
+
+.table {
+    text-align: left;
+}
+
+th {
+    width: 100px;
+}
+
+th {
+    font-size: 16px;
+}
+
+td {
+    font-weight: light;
+    font-style: italic;
 }
